@@ -1,7 +1,7 @@
 'use client'
 
 import ContactForm from "../elements/Formulaire";
-import "../../style/contact/contact.min.css"
+import "../../style/Contact/contact.min.css"
 
 
 const Contact = () => {
