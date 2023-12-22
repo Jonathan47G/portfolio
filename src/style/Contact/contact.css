@@ -1,0 +1,140 @@
+#contact {
+  padding: 100px 50px;
+  border-top: 2px solid #ACD8FC;
+}
+
+.formulaire__contact {
+  margin-top: 50px;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #F4FAFF;
+  border: 1px solid #ACD8FC;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  position: relative;
+}
+.formulaire__contact h2,
+.formulaire__contact p {
+  margin: 0;
+}
+.formulaire__contact p {
+  color: #193B2D;
+}
+.formulaire__contact form {
+  margin-top: 60px;
+  max-width: 100%;
+  display: grid;
+  gap: 30px;
+  justify-items: center;
+}
+@media screen and (max-width: 768px) {
+  .formulaire__contact form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.formulaire__contact form label {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  align-items: center;
+  width: 80%;
+  position: relative;
+}
+.formulaire__contact form label small {
+  width: 100%;
+  color: #ce2c31;
+  margin-bottom: 0;
+  position: absolute;
+  bottom: -20px;
+  left: 5%;
+  text-align: center;
+}
+.formulaire__contact form input,
+.formulaire__contact form textarea {
+  max-width: 344px;
+  min-height: 40px;
+  background-color: #E6F4FE;
+  border: 1px solid #8EC8F6;
+  border-radius: 4px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+@media screen and (max-width: 768px) {
+  .formulaire__contact form input,
+  .formulaire__contact form textarea {
+    box-sizing: border-box;
+    width: 100%;
+  }
+}
+.formulaire__contact form input:hover,
+.formulaire__contact form textarea:hover {
+  background-color: #D5EFFF;
+  outline: 1px solid #5EB1EF;
+}
+.formulaire__contact form input:focus,
+.formulaire__contact form textarea:focus {
+  background-color: #C2E5FF;
+  outline: 1px solid #5EB1EF;
+}
+.formulaire__contact form textarea {
+  min-height: 60px;
+}
+.formulaire__contact form button {
+  color: #fff;
+  background-color: #8b8d98;
+  padding: 10px 15px;
+  width: 20%;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+@media screen and (max-width: 768px) {
+  .formulaire__contact form button {
+    width: 50%;
+  }
+}
+.formulaire__contact form .button-active {
+  background-color: #0090FF;
+}
+.formulaire__contact form .button-active:hover {
+  background-color: #0588F0;
+}
+.formulaire__contact .modal__formulaire {
+  position: absolute;
+  background-color: #F4FAFF;
+  border: 3px solid #ACD8FC;
+  border-radius: 10px;
+  padding: 20px;
+  width: 80%;
+  height: 50%;
+  top: 50px;
+  left: 7%;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.formulaire__contact .modal__formulaire__content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.formulaire__contact .modal__formulaire__content button {
+  background-color: #0090FF;
+  padding: 5px 10px;
+  border-radius: 5px;
+  width: 25%;
+  border: none;
+  color: #fff;
+}
+.formulaire__contact .modal__formulaire__content button:hover {
+  background-color: #0588F0;
+}
+.formulaire__contact .modal__formulaire__content p {
+  color: #113264;
+  font-size: 1.5em;
+}

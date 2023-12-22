@@ -1,0 +1,38 @@
+$mainBackground : #FBFDFF;
+
+$secondaryBackground : #F4FAFF;
+$secondaryBackgroundHover:#D5EFFF;
+
+$buttonBackground: #0090FF;
+$buttonBackgroundHover: #0588F0;
+
+$interactiveBackground: #E6F4FE;
+$interactiveBackgroundHover:#D5EFFF;
+$interactiveBackgroundActive:#C2E5FF;
+
+$interactiveBorder:#8EC8F6;
+$interactiveBorderHover:#5EB1EF;
+
+$borderColor : #ACD8FC;
+$borderColorHover: #5EB1EF;
+
+$primaryFont : #113264;
+$primaryFontLink: #0D74CE;
+
+$secondaryFont: #193B2D;
+$tagBackgroundColor : #30A46C;
+
+$mobile-breakpoint: 768px;
+$tablet-breakpoint: 1250px;
+
+@mixin mobile {
+    @media screen and (max-width: $mobile-breakpoint) {
+      @content;
+    }
+}
+
+@mixin tablet {
+    @media screen and (min-width: #{$mobile-breakpoint + 1}) and (max-width: $tablet-breakpoint) {
+      @content;
+    }
+  }

@@ -1,12 +1,18 @@
-import Image from 'next/image'
-import Header from '@/composants/Headers'
-import Banniere from '@/composants/Baniere'
+import Banniere from '@/composants/containers/Baniere'
+import '../style/global/global.min.css'
+import Projet from '@/composants/containers/Projet'
+import Competences from '@/composants/containers/Competences'
+import Contact from '@/composants/containers/Contact'
+
 
 export default function Home() {
   return (
+
     <main>
-      <Header />
       <Banniere />
+      <Competences />
+      <Projet />
+      <Contact />
     </main>
   )
 }

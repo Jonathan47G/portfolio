@@ -1,0 +1,36 @@
+.arriver-centre {
+	-webkit-animation: animation-centre 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+		both;
+	animation: animation-centre 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+.arriver-centre-revers {
+	-webkit-animation: animation-centre 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+		reverse both;
+	animation: animation-centre 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse
+		both;
+}
+
+@-webkit-keyframes animation-centre {
+	0% {
+		-webkit-transform: scaleY(0);
+		transform: scaleY(0);
+		opacity: 1;
+	}
+	100% {
+		-webkit-transform: scaleY(1);
+		transform: scaleY(1);
+		opacity: 1;
+	}
+}
+@keyframes animation-centre {
+	0% {
+		-webkit-transform: scaleY(0);
+		transform: scaleY(0);
+		opacity: 1;
+	}
+	100% {
+		-webkit-transform: scaleY(1);
+		transform: scaleY(1);
+		opacity: 1;
+	}
+}

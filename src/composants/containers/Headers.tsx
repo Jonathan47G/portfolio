@@ -1,9 +1,8 @@
 import NavBar from "./NavBar";
-
+import "../../style/header/header.min.css"
 
 const Header:React.FC = () =>{
- return <header className="test">
-    <div className="tes2"><h1>Portfolio Guestin Jonathan</h1></div>
+ return <header>
     <NavBar />
  </header>
 }

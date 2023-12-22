@@ -1,0 +1,32 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model slider_work {
+  id      Int     @id @default(autoincrement())
+  image   String? @db.VarChar(255)
+  id_work Int?
+}
+
+model users {
+  id       String @id @default(dbgenerated("uuid_generate_v4()")) @db.Uuid
+  name     String @db.VarChar(255)
+  email    String @unique
+  password String
+}
+
+model work {
+  id          String   @id @default(dbgenerated("uuid_generate_v4()")) @db.Uuid
+  categorie   String   @db.VarChar(255)
+  date        DateTime @db.Date
+  description String
+  tag         String   @db.VarChar(255)
+  titre       String   @db.VarChar(255)
+  focus_image String   @db.VarChar(255)
+  selection   Boolean?
+}

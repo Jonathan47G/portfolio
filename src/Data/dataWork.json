@@ -1,0 +1,192 @@
+{
+	"work": [
+		{
+			"id": 1,
+			"titre": "Argent bank",
+			"tag": "Developpement",
+			"image": "/images/Selection/Bank/1.webp",
+			"focus": "/images/Selection/Bank/Focus_ArgentBank.webp",
+			"description": [
+				"J'ai développé une application React axée sur l'authentification des utilisateurs. La phase 1 implique la création d'une interface responsive avec Redux, à partir de HTML/CSS fournis. Les fonctionnalités incluent l'accès sécurisé, la gestion de profil, et la déconnexion. J'ai suivi les bonnes pratiques de Green Code, optimisé les images, et créé des composants réutilisables pour assurer une intégration efficace.",
+				"En phase de conception, nous avons travaillé sur une fonctionnalité permettant aux utilisateurs de visualiser, d'ajouter, de modifier et de supprimer des transactions."
+			],
+			"stack": [
+				"React",
+				"Redux",
+				"SCSS",
+				"Creat React App",
+				"Redux DevTools",
+				"Node.JS",
+				"Swagger"
+			],
+			"competence_developper": [
+				"Afficher les données du back end sur l'interface via des appels API",
+				"Configurer des routes API pour la communication client / serveur",
+				"Implémenter la gestion des données avec Redux pour assurer le fonctionnement du front"
+			],
+			"lien_github": "https://github.com/Jonathan47G/ArgentBank-website",
+			"selection": true,
+			"slider_work": [
+				{
+					"images": [
+						"/images/Selection/Bank/1.webp",
+						"/images/Selection/Bank/2.webp",
+						"/images/Selection/Bank/3.webp",
+						"/images/Selection/Bank/4.webp"
+					]
+				}
+			]
+		},
+		{
+			"id": 2,
+			"titre": "77Event",
+			"tag": "Débuggage",
+			"image": "/images/Selection/77Event/1.webp",
+			"focus": "/images/Selection/77Event/Focus_77Events.webp",
+			"stack": [
+				"React",
+				"React Developer Tools",
+				"React Testing Library",
+				"Jest"
+			],
+			"description": [
+				"Mon rôle a inclus la résolution de bugs, tels que la correction du carrousel, du filtre et du formulaire, en effectuant des ajustements de code et en corrigeant des typos.",
+				"Cette expérience m'a permis de mettre en pratique mes compétences en débogage, en tests et en optimisation de la qualité du code."
+			],
+			"competence_developper": [
+				"Debugger un site web grâce aux Chrome DevTools",
+				"Rédiger un cahier de recette pour tester un site"
+			],
+			"lien_github": "https://github.com/Jonathan47G/77Events",
+			"selection": true,
+			"slider_work": [
+				{
+					"images": [
+						"/images/Selection/77Event/1.webp",
+						"/images/Selection/77Event/2.webp",
+						"/images/Selection/77Event/3.webp"
+					]
+				}
+			]
+		},
+		{
+			"id": 3,
+			"titre": "Nina Carducci",
+			"tag": "Optimisation",
+			"image": "/images/Selection/Nina/1.webp",
+			"focus": "/images/Selection/Nina/Focus_NinaCarducci.webp",
+			"stack": [
+				"Photoshop",
+				"Lighthouse",
+				"Google Search Console",
+				"Google My Business",
+				"Schema.org",
+				"OpenGraph / Twitter Card",
+				"Wave"
+			],
+			"description": [
+				"Mission d'optimisation complète de site web. Cette initiative englobait l'amélioration des performances et du référencement (SEO), l'implémentation de Schema.org pour le référencement local, l'ajout de métadonnées pour les réseaux sociaux, ainsi que des ajustements liés à l'accessibilité.",
+				"La mission s'est conclue par la production d'un rapport détaillé récapitulant toutes les actions entreprises et leur impact positif."
+			],
+			"competence_developper": ["Optimiser la performance d'un site web"],
+			"lien_github": "https://github.com/Jonathan47G/ninacarducci",
+			"selection": true,
+			"slider_work": [
+				{
+					"images": [
+						"/images/Selection/Nina/1.webp",
+						"/images/Selection/Nina/2.webp",
+						"/images/Selection/Nina/3.webp",
+						"/images/Selection/Nina/4.webp"
+					]
+				}
+			]
+		},
+		{
+			"id": 4,
+			"titre": "Kasa",
+			"tag": "Développement",
+			"image": "/images/Tous/Kasa/1.webp",
+			"focus": "/images/Tous/Kasa/Focus_Kasa.webp",
+			"stack": ["Scss", "Creat React App", "API", "Figma"],
+			"description": [
+				"J'ai utilisé Figma pour créer des maquettes détaillées, mettant en œuvre la logique de composants pour faciliter l'intégration avec React.",
+				"Toutes les ressources nécessaires, telles que le logo et les icônes, sont accessibles directement depuis les maquettes. Cela simplifie le processus d'exportation. Des prototypes interactifs ont été élaborés pour offrir une visualisation réaliste de l'application, mettant en lumière les animations prévues, notamment sur les menus déroulants."
+			],
+			"competence_developper": [
+				"Mettre en œuvre des animations CSS",
+				"Développer une interface web avec Sass",
+				"Configurer la navigation entre les pages de l'application avec React Router",
+				"Développer des éléments de l'interface d'un site web grâce à des composants React"
+			],
+			"lien_github": "https://github.com/Jonathan47G/apli-kasa",
+			"selection": false,
+			"slider_work": [
+				{
+					"images": [
+						"/images/Tous/Kasa/1.webp",
+						"/images/Tous/Kasa/2.webp",
+						"/images/Tous/Kasa/3.webp"
+					]
+				}
+			]
+		},
+		{
+			"id": 5,
+			"titre": "Sophie Bluel",
+			"tag": "Développement",
+			"image": "/images/Tous/SophieBluel/1.webp",
+			"focus": "/images/Tous/SophieBluel/Focus_SophieBluel.webp",
+			"stack": ["Scss", "JS", "API", "Figma"],
+			"description": [
+				"J'ai contribué au site portfolio d'une architecte d'intérieur. Mes missions incluaient l'amélioration de la page de présentation des travaux, la création d'une page de connexion admin, et le développement d'une modale d'upload de médias.",
+				"Organisé grâce au Kanban, cela a renforcé mes compétences en développement front-end dans un environnement collaboratif dynamique."
+			],
+			"competence_developper": [
+				"Gérer les événements utilisateurs avec JavaScript",
+				"Manipuler les éléments du DOM avec JavaScript",
+				"Récupérer les données utilisateurs dans le JavaScript via des formulaires"
+			],
+			"lien_github": "https://github.com/Jonathan47G/Portfolio-architecte-sophie-bluel",
+			"selection": false,
+			"slider_work": [
+				{
+					"images": [
+						"/images/Tous/SophieBluel/1.webp",
+						"/images/Tous/SophieBluel/2.webp",
+						"/images/Tous/SophieBluel/3.webp",
+						"/images/Tous/SophieBluel/4.webp"
+					]
+				}
+			]
+		},
+		{
+			"id": 6,
+			"titre": "HomyFood",
+			"tag": "Développement",
+			"image": "/images/Tous/Homyfood/1.webp",
+			"focus": "/images/Tous/Homyfood/Focus_OhmyFood.webp",
+			"stack": ["Scss", "Figma"],
+			"description": [
+				"Développement d'un site, mobile first répertoriant les menus de restaurants gastronomiques. Le brief créatif a été élaboré, définissant 4 menus initiaux.",
+				"Avec les maquettes, le prototype Figma, et les sources du site. Le défi consiste à développer un site responsive pour mobile, tablette, et desktop, en mettant en œuvre des animations soignées avec SASS, conformément aux directives du brief."
+			],
+			"competence_developper": [
+				"Intégrer une maquette en mobile-first",
+				"Mettre en œuvre des animations CSS",
+				"Versionner son projet avec Git et Github"
+			],
+			"lien_github": "https://github.com/Jonathan47G/Homyfood",
+			"selection": false,
+			"slider_work": [
+				{
+					"images": [
+						"/images/Tous/Homyfood/1.webp",
+						"/images/Tous/Homyfood/2.webp",
+						"/images/Tous/Homyfood/3.webp"
+					]
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,199 @@
+@import "../variableMixin/variableMixin.scss";
+
+.containers__projets {
+	width: 100%;
+	background-color: $secondaryBackground;
+	border-top: 2px $borderColor solid;
+	padding-bottom: 150px;
+
+	h2 {
+		text-align: center;
+		margin-top: 75px;
+		padding-bottom: 40px;
+	}
+	&__card {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		max-width: 80%;
+		height: 100%;
+		gap: 40px;
+		margin: 0 auto;
+		@include tablet {
+			grid-template-columns: repeat(1, 1fr);
+		  }
+		  @include mobile {
+			grid-template-columns: repeat(1, 1fr);
+		  }
+
+		.card {
+			display: flex;
+			position: relative;
+			overflow: hidden;
+			flex-direction: column;
+			justify-content: space-around;
+			background-color: $interactiveBackground;
+			border: 1px $borderColor solid;
+			border-radius: 15px;
+			height: auto;
+			min-height: 100%;
+			.card_image {
+				@include tablet {
+					height: 350px;
+				  }
+				  @include mobile {
+					height: 200px;
+				  }
+			}
+
+			&:hover {
+				border-color: $borderColorHover;
+				.card__info {
+					height: 100%;
+				}
+			}
+			&__info {
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				color: #fff;
+				background-color: $interactiveBackground;
+				overflow: hidden;
+				width: 100%;
+				height: 0;
+				transition: 0.2s ease;
+				text-align: center;
+
+				&__texte {
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					-webkit-transform: translate(-50%, -50%);
+					-ms-transform: translate(-50%, -50%);
+					transform: translate(-50%, -50%);
+					width: 100%;
+					height: 100%;
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					justify-content: space-between;
+					box-sizing: border-box;
+					@include tablet {
+						justify-content: space-evenly;
+					  }
+
+					h3 {
+						width: 50%;
+						padding: 10px;
+						margin: 0;
+						color: #202020;
+						border-bottom: #20202041 2px solid;
+						margin-bottom: 10px;
+					}
+					&-conteneurImage {
+						height: 25%;
+						width: 80%;
+						box-sizing: border-box;
+						@include tablet {
+							width: 75%;
+							height: 50%;
+							display: flex;
+							align-items: center;
+							justify-content: center;
+						  }
+						  @include mobile {
+							height: 35%;
+							display: flex;
+							align-items: center;
+							justify-content: center;
+						  }
+
+						&-focus {
+							width: 75%;
+							object-fit: cover;
+							border: $borderColor 2px solid;
+							@include tablet {
+								height: 60%;
+							  }
+							  @include mobile {
+								height: 50%;
+								width: auto;
+							  }
+						}
+					}
+					&__git-bouton {
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						width: 100%;
+						gap: 30px;
+						margin-top: 10px;
+						padding-bottom: 10px;@include tablet {
+							gap:20px;
+						  }
+						  @include mobile {
+							gap:10px;
+						  }
+
+						.lien-git {
+							width: 7%;
+							
+							.card__info__texte-logo {
+								width: 100%;
+								background-color: #fff;
+								border-radius: 100%;
+								
+							}
+						}
+						p {
+							background-color: $buttonBackground;
+							border: none;
+							border-radius: 5px;
+							padding: 5px 10px;
+							display: flex;
+							align-items: center;
+							justify-content: center;
+							a {
+								
+								width: auto;
+								color: white;
+								font-size: 1.1em;
+								text-decoration: none;
+								font-family: '__Scada_04760f';
+								@include tablet {
+									font-size: 0.8em;
+								  }
+								  @include mobile {
+									font-size: 0.5em;
+								  }
+							}
+							&:hover {
+								background-color: $buttonBackgroundHover;
+							}
+
+							
+						}
+					}
+				}
+			}
+		}
+
+		img {
+			object-fit: cover;
+			object-position: bottom;
+			height: 100%;
+			width: 100%;
+			border-radius: 15px;
+		}
+	}
+	span {
+		position: absolute;
+		top: 5px;
+		right: 15px;
+		background-color: $tagBackgroundColor;
+		color: $mainBackground;
+		padding: 3px;
+		border-radius: 5px;
+		font-size: 0.8em;
+	}
+}

@@ -1,0 +1,160 @@
+@import "../variableMixin/variableMixin.scss";
+.main {
+	background-color: $interactiveBackground;
+	padding: 100px 25px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 50px;
+	h1 {
+		text-decoration: underline;
+		text-decoration-thickness: 6px;
+		text-underline-offset: 25px;
+		@include tablet {
+			text-align: center;
+		}
+		@include mobile {
+			text-align: center;
+		}
+	}
+	&__projet {
+		width: 100%;
+		display: flex;
+		@include tablet {
+			flex-direction: column;
+		}
+		@include mobile {
+			flex-direction: column;
+		}
+        
+
+		.main__slider {
+			display: flex;
+			flex-direction: column;
+			max-height: 100%;
+			min-width: 50%;
+			max-width: 50%;
+			align-items: center;
+			margin-top: 6px;
+			border-right: 4px $borderColor solid;
+			padding-right: 25px;
+			@include tablet {
+				width: 100%;
+				max-width: none;
+			}
+			@include mobile {
+				width: 100%;
+				max-width: none;
+			}
+			&__image {
+				width: 100%;
+				position: relative;
+				&:hover {
+					svg {
+						opacity: 1;
+						transition: opacity 300ms;
+					}
+				}
+				img {
+					max-width: 100%;
+					width: 100%;
+					height: 400px;
+					object-fit: cover;
+                    border-radius: 10px;
+				}
+
+				&__bouton {
+					position: absolute;
+					top: 0;
+					color: white;
+					display: flex;
+					justify-content: space-between;
+					align-items: center;
+					height: 100%;
+					width: calc(100% - 50px);
+					height: 100%;
+					margin-left: 20px;
+					svg {
+						opacity: 0;
+						background-color: rgba(0, 0, 0, 0.199);
+						cursor: pointer;
+						box-sizing: border-box;
+						border-radius: 5px;
+						padding: 5px;
+						font-size: 30px;
+					}
+				}
+			}
+		}
+		.main__information {
+            background-color: $mainBackground;
+			margin-left: 25px;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content:space-between;
+            border-radius: 10px;
+            gap: 10px;
+            h2 {
+                font-size: 1.4em;
+                text-decoration: underline;
+                margin-top: 0;
+                margin-bottom: 5px;
+				@include tablet {
+					text-align: center;
+				}
+				@include mobile {
+					text-align: center;
+				}
+            }
+			&__liste {
+				display: flex;
+                width: 100%;
+                justify-content: space-around;
+				@include mobile {
+					flex-direction: column-reverse;
+					gap: 30px;
+				}
+                    ul {
+                        margin: 0;
+                        padding: 0;
+						@include tablet {
+							width: 50%;
+							display: flex;
+							flex-direction: column;
+							align-items: center;
+						}
+						@include mobile {
+							width: 100%;
+							display: flex;
+							flex-direction: column;
+							align-items: center;
+						}
+                    }
+                    li {
+                        margin: 5px;
+                    }
+			}
+            a{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap:15px;
+                text-decoration: none;
+				@include mobile {
+					margin-top: 50px;
+				}
+                p {
+                    background-color: $buttonBackground;
+                    padding: 5px 15px;
+                    border-radius: 10px;
+                    color: white;
+                }
+                img {
+                    width: 30px;
+                    height: 30px;
+                }
+            }
+		}
+	}
+}

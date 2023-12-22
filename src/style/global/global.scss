@@ -1,0 +1,56 @@
+@import "../variableMixin/variableMixin.scss";
+
+
+html {
+    background-color: $mainBackground;
+    margin: auto;
+    scroll-behavior: smooth;
+    max-width: 1920px;
+    border: $borderColor 1px solid;
+    
+    body {
+      
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        p, a, li, span, label {
+            color: $primaryFontLink;
+        }
+        label {
+         font-size: 0.9em;
+        }
+        strong {
+         font-size: 1.1em;
+         color: $secondaryFont;
+        }
+        ul {
+            list-style: none;
+         } 
+         h1 {
+            font-size: 3.5em;
+         }
+         h2 {
+            font-size: 2.5em;
+            @include tablet {
+               font-size: 1.8em;
+               
+             }
+             @include mobile {
+               font-size: 1.5em;
+             }
+         }
+         h3 {
+            font-size: 1.5em;
+            @include tablet {
+               font-size: 1.3em;
+             }
+             @include mobile {
+               font-size: 1.2em;
+             }
+         }
+         h1,h2,h3 {
+            color : $primaryFont;
+         }
+    }
+}
+
