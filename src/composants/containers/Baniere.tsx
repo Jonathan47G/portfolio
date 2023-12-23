@@ -42,7 +42,7 @@ const Banniere: React.FC = () => {
 							</span>
 							Twitter
 						</Link>
-						<Link href="lien_linkedin" aria-label="LinkedIn">
+						<Link href="https://www.linkedin.com/in/jonathan-guestin-ab353027b/" aria-label="LinkedIn">
 							<span>
 								<FontAwesomeIcon icon={faLinkedinIn} />
 							</span>
