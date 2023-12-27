@@ -23,7 +23,7 @@ const Footer = () => {
 								<FontAwesomeIcon icon={faTwitter} />
 							</span>
 						</Link>
-						<Link href="lien_linkedin" aria-label="LinkedIn">
+						<Link href="www.linkedin.com/in/jonathan-guestin-ab353027b" aria-label="LinkedIn">
 							<span>
 								<FontAwesomeIcon icon={faLinkedinIn} />
 							</span>
