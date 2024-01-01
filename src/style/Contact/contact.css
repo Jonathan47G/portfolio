@@ -1,11 +1,61 @@
+html.dark #contact {
+  border-top-color: #104D87;
+}
+html.dark .formulaire__contact {
+  background-color: #111927;
+  border-color: #104D87;
+  box-shadow: none;
+}
+html.dark .formulaire__contact p {
+  color: #B1F1CB;
+}
+html.dark .formulaire__contact input,
+html.dark .formulaire__contact textarea {
+  background-color: #0D2847;
+  border: 1px solid #205D9E;
+  color: #C2E6FF;
+}
+html.dark .formulaire__contact input:hover,
+html.dark .formulaire__contact textarea:hover {
+  background-color: #003362;
+  outline: 1px solid #2870BD;
+}
+html.dark .formulaire__contact input:focus,
+html.dark .formulaire__contact textarea:focus {
+  background-color: #004074;
+  outline: 1px solid #2870BD;
+}
+html.dark .formulaire__contact .button-active {
+  background-color: #0090FF;
+}
+html.dark .formulaire__contact .button-active:hover {
+  background-color: #3B9EFF;
+}
+html.dark .modal__formulaire {
+  position: absolute;
+  background-color: #111927;
+  border-color: #104D87;
+  box-shadow: none;
+}
+html.dark .modal__formulaire__content button:hover {
+  background-color: #3B9EFF;
+}
+html.dark .modal__formulaire__content p {
+  color: #C2E6FF;
+}
+
 #contact {
-  padding: 100px 50px;
   border-top: 2px solid #ACD8FC;
+  display: flex;
+  width: 100%;
+  align-items: center;
 }
 
 .formulaire__contact {
   margin-top: 50px;
   max-width: 600px;
+  width: 100%;
+  height: 100%;
   margin: 0 auto;
   padding: 20px;
   background-color: #F4FAFF;

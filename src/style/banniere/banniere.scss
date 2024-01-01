@@ -1,5 +1,35 @@
 @import "../variableMixin/variableMixin.scss";
+html.dark {
+	.banniere {
+		display: flex;
+		background-color: $secondaryBackgroundDark;
+	
+		&__conteneur {
+			&__image {
+				border-color: $borderColorDark;
+				box-shadow: none;
+			}
 
+			&__lien {
+				a {
+					border-color:$borderColorDark;
+					color: white;
+
+					span {
+						color: white;
+					}
+	
+					&:hover {
+						background-color: $buttonBackgroundHoverDark;
+						border-color: $borderColorHoverDark;
+						box-shadow: none;
+					}
+				}
+				
+			}
+		}
+	}
+}
 .banniere {
 	display: flex;
 	background-color: $secondaryBackground;

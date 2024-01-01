@@ -3,9 +3,11 @@ import type { Metadata, Viewport } from "next";
 import { scada } from "./font";
 import Header from "@/composants/containers/Headers";
 import Footer from "@/composants/containers/Footer";
+import { ThemeProvider } from "@/composants/elements/themProvider";
+
 export const viewport: Viewport = {
-	themeColor: 'black',
-  }
+	themeColor: "black",
+};
 export const metadata: Metadata = {
 	metadataBase: new URL("https://guestinjonathan.vercel.app/"),
 	title: "Portfolio Guestin Jonathan, intégrateur web",
@@ -47,21 +49,26 @@ export const metadata: Metadata = {
 			alt: "Portfolio Guestin Jonathan, intégrateur web",
 		},
 	},
-	
 };
 
 export default function RootLayout({
 	children,
 }: {
 	children: React.ReactNode;
-	
 }) {
+	
 	return (
-		<html className={scada.className} lang="fr">
+		<html className={scada.className} lang="fr" suppressHydrationWarning>
 			<body>
-				<Header />
-				{children}
-				<Footer />
+				<ThemeProvider
+					attribute="class"
+					defaultTheme="dark"
+					enableSystem
+					disableTransitionOnChange>
+					<Header />
+					{children}
+					<Footer />
+				</ThemeProvider>
 			</body>
 		</html>
 	);

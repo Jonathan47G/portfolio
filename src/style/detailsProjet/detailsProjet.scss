@@ -1,4 +1,32 @@
 @import "../variableMixin/variableMixin.scss";
+
+html.dark {
+	.main {
+		background-color: $interactiveBackgroundDark;
+
+		&__projet {
+			.main__slider {
+				border-right-color: $borderColorDark;
+			}
+		}
+
+		.main__information {
+			background-color: $mainBackgroundDark;
+
+			a {
+				img {
+					background-color: $buttonBackground;
+					border-radius: 100%;
+					padding: 2px;
+				}
+				p:hover {
+					background-color: $buttonBackgroundHoverDark;
+				}
+			}
+		}
+	}
+}
+
 .main {
 	background-color: $interactiveBackground;
 	padding: 100px 25px;
@@ -26,7 +54,6 @@
 		@include mobile {
 			flex-direction: column;
 		}
-        
 
 		.main__slider {
 			display: flex;
@@ -60,7 +87,7 @@
 					width: 100%;
 					height: 400px;
 					object-fit: cover;
-                    border-radius: 10px;
+					border-radius: 10px;
 				}
 
 				&__bouton {
@@ -87,74 +114,78 @@
 			}
 		}
 		.main__information {
-            background-color: $mainBackground;
+			background-color: $mainBackground;
 			margin-left: 25px;
-            padding: 10px;
-            display: flex;
-            flex-direction: column;
-            justify-content:space-between;
-            border-radius: 10px;
-            gap: 10px;
-            h2 {
-                font-size: 1.4em;
-                text-decoration: underline;
-                margin-top: 0;
-                margin-bottom: 5px;
+			padding: 10px;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			border-radius: 10px;
+			gap: 10px;
+			h2 {
+				font-size: 1.4em;
+				text-decoration: underline;
+				margin-top: 0;
+				margin-bottom: 5px;
 				@include tablet {
 					text-align: center;
 				}
 				@include mobile {
 					text-align: center;
 				}
-            }
+			}
 			&__liste {
 				display: flex;
-                width: 100%;
-                justify-content: space-around;
+				width: 100%;
+				justify-content: space-around;
 				@include mobile {
 					flex-direction: column-reverse;
 					gap: 30px;
 				}
-                    ul {
-                        margin: 0;
-                        padding: 0;
-						@include tablet {
-							width: 50%;
-							display: flex;
-							flex-direction: column;
-							align-items: center;
-						}
-						@include mobile {
-							width: 100%;
-							display: flex;
-							flex-direction: column;
-							align-items: center;
-						}
-                    }
-                    li {
-                        margin: 5px;
-                    }
+				ul {
+					margin: 0;
+					padding: 0;
+					@include tablet {
+						width: 50%;
+						display: flex;
+						flex-direction: column;
+						align-items: center;
+					}
+					@include mobile {
+						width: 100%;
+						display: flex;
+						flex-direction: column;
+						align-items: center;
+					}
+				}
+				li {
+					margin: 5px;
+				}
 			}
-            a{
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                gap:15px;
-                text-decoration: none;
+			a {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				gap: 15px;
+				text-decoration: none;
 				@include mobile {
 					margin-top: 50px;
 				}
-                p {
-                    background-color: $buttonBackground;
-                    padding: 5px 15px;
-                    border-radius: 10px;
-                    color: white;
-                }
-                img {
-                    width: 30px;
-                    height: 30px;
-                }
-            }
+				p {
+					background-color: $buttonBackground;
+					padding: 5px 15px;
+					border-radius: 10px;
+					color: white;
+					&:hover {
+						background-color: $buttonBackgroundHover;
+					}
+				}
+
+				img {
+					width: 30px;
+					height: 30px;
+				}
+			}
 		}
 	}
 }

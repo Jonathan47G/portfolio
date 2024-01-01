@@ -5,6 +5,9 @@ html {
   max-width: 1920px;
   border: #ACD8FC 1px solid;
 }
+html section {
+  min-height: 1000px;
+}
 html body {
   width: 100%;
   height: 100%;
@@ -54,4 +57,22 @@ html body h3 {
 }
 html body h1, html body h2, html body h3 {
   color: #113264;
+}
+
+html.dark {
+  background-color: #0D1520;
+  border-color: #104D87;
+}
+html.dark body p, html.dark body a, html.dark body li, html.dark body span, html.dark body label {
+  color: #70B8FF;
+}
+html.dark body label {
+  font-size: 0.9em;
+}
+html.dark body strong {
+  font-size: 1.1em;
+  color: #B1F1CB;
+}
+html.dark body h1, html.dark body h2, html.dark body h3 {
+  color: #C2E6FF;
 }

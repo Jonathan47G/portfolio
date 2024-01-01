@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import { bangla } from "@/app/font";
+import { ModeToggle } from "./ButtonTheme";
 
 interface HamburgerMenuProps {
 	isOpen: boolean;
@@ -29,6 +30,9 @@ const HamburgerMenu: React.FC<HamburgerMenuProps> = ({
 				className={`hamburgerMenu__link ${bangla.className} ${
 					isOpen ? "open" : ""
 				}`}>
+					<li>
+						<ModeToggle />
+					</li>
 				<li>
 					<Link href="/#competences">
 						<p

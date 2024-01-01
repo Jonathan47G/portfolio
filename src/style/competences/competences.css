@@ -1,3 +1,11 @@
+html.dark .containers__competences {
+  border-top-color: #104D87;
+}
+html.dark .containers__competences__groupe__skill li {
+  background-color: #111927;
+  border-color: #104D87;
+}
+
 .containers__competences {
   border-top: solid 2px #ACD8FC;
   display: flex;
@@ -10,7 +18,7 @@
   justify-content: space-between;
   width: 100%;
   margin: auto;
-  padding: 150px 15px;
+  padding: 0 15px;
 }
 @media screen and (min-width: 769px) and (max-width: 1250px) {
   .containers__competences__groupe {

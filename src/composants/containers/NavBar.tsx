@@ -9,12 +9,13 @@ import LogoCV from "../../app/assets/images/logo/CV.svg";
 import Image from "next/image";
 import { bangla } from "@/app/font";
 import { faBars } from "@fortawesome/free-solid-svg-icons/faBars";
+import { ModeToggle } from "../elements/ButtonTheme";
 
 function NavBar() {
-	const [activeLink, setActiveLink] = useState("accueil");
+	const [activeLink, setActiveLink] = useState("home");
 	const [isMenuOpen, setMenuOpen] = useState(false);
 
-	const handleNavLinkClick = (hash:any) => {
+	const handleNavLinkClick = (hash: any) => {
 		setActiveLink(hash);
 		const element = document.getElementById(hash);
 		if (element) {
@@ -31,27 +32,37 @@ function NavBar() {
 
 	useEffect(() => {
 		if (typeof window !== "undefined") {
-		  const handleScroll = () => {
-			const sections = ["accueil", "competences", "projet", "contact"];
-			let currentActiveLink = "accueil";
-	
-			for (const section of sections) {
-			  const element = document.getElementById(section);
-			  if (element && element.getBoundingClientRect().top <= 0) {
-				currentActiveLink = section;
-			  }
-			}
-	
-			setActiveLink(currentActiveLink);
-		  };
-	
-		  window.addEventListener("scroll", handleScroll);
-	
-		  return () => {
-			window.removeEventListener("scroll", handleScroll);
-		  };
+			const handleScroll = () => {
+				const sections = ["home", "competences", "projet", "contact"];
+				let currentActiveLink = "home";
+
+				for (const section of sections) {
+					const element = document.getElementById(section);
+					if (element) {
+						const rect = element.getBoundingClientRect();
+
+						// Condition pour vérifier si l'élément est visible à l'écran
+						const isVisible =
+							rect.top >= 0 &&
+							rect.bottom <=
+								(window.innerHeight || document.documentElement.clientHeight);
+
+						if (isVisible) {
+							currentActiveLink = section;
+						}
+					}
+				}
+
+				setActiveLink(currentActiveLink);
+			};
+
+			window.addEventListener("scroll", handleScroll);
+
+			return () => {
+				window.removeEventListener("scroll", handleScroll);
+			};
 		}
-	  }, []);
+	}, []);
 
 	return (
 		<nav className="navBar">
@@ -66,7 +77,7 @@ function NavBar() {
 					/>
 				</Link>
 			</div>
-
+			
 			<button className="bouton__Hamburger" onClick={toggleMenu}>
 				<FontAwesomeIcon icon={faBars} />
 			</button>
@@ -75,6 +86,9 @@ function NavBar() {
 				onLinkClick={() => setMenuOpen(false)}
 			/>
 			<ul className={`navBar__navLien ${bangla.className}`}>
+				<li>
+				<ModeToggle />
+				</li>
 				<li>
 					<Link href="/#competences">
 						<p

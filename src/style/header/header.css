@@ -1,3 +1,46 @@
+html.dark .navBar {
+  background-color: #0D1520;
+  border-bottom-color: #104D87;
+  box-shadow: none;
+}
+html.dark .navBar__header img {
+  background-color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+html.dark .navBar__CV {
+  background-color: white;
+  padding: 2px;
+  border-radius: 5px;
+}
+html.dark .navBar .bouton__Hamburger {
+  color: #70B8FF;
+}
+html.dark .navBar .hamburgerMenu {
+  background-color: #0D2847;
+}
+html.dark .navBar .hamburgerMenu li {
+  border-bottom-color: #104D87;
+}
+html.dark .navBar .hamburgerMenu li a p {
+  color: #C2E6FF;
+}
+html.dark .navBar .hamburgerMenu li:hover {
+  background-color: #003362;
+}
+html.dark .navBar .hamburgerMenu li:hover p {
+  color: #70B8FF;
+}
+html.dark .navBar__navLien li:hover p {
+  color: #70B8FF;
+}
+html.dark .navBar__navLien li:not(:last-child)::after {
+  background-color: #104D87;
+}
+html.dark .navBar__navLien li p {
+  color: #C2E6FF;
+}
+
 .navBar {
   position: fixed;
   background-color: #FBFDFF;
@@ -100,6 +143,7 @@
   border-bottom: #ACD8FC 1px solid;
   width: 100%;
   padding: 10px 0;
+  cursor: pointer;
 }
 .navBar .hamburgerMenu ul li a {
   text-decoration: none;
@@ -135,6 +179,7 @@
 .navBar__navLien {
   margin-right: 50px;
   display: flex;
+  align-items: center;
   gap: 45px;
 }
 @media screen and (min-width: 769px) and (max-width: 1250px) {
@@ -154,6 +199,10 @@
   padding: 5px 15px;
   transition: all 0.2s ease;
   transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+.navBar__navLien li svg {
+  height: 25px;
+  width: auto;
 }
 .navBar__navLien li:hover {
   transform: translateY(2px);
@@ -181,8 +230,10 @@
   gap: 10px;
 }
 .navBar__navLien li p {
+  display: flex;
   color: #113264;
   font-size: 1.1em;
+  margin: 0;
 }
 .navBar__navLien li p.active {
   -webkit-text-decoration: underline 4px;

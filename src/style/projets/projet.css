@@ -1,12 +1,51 @@
+html.dark .containers__projets {
+  background-color: #111927;
+  border-top-color: #104D87;
+}
+html.dark .containers__projets__card .card {
+  background-color: #0D2847;
+  border-color: #104D87;
+}
+html.dark .containers__projets__card .card:hover {
+  border-color: #2870BD;
+}
+html.dark .containers__projets__card .card__info {
+  background-color: #0D2847;
+}
+html.dark .containers__projets__card .card__info__texte h3 {
+  color: #C2E6FF;
+  border-bottom-color: #104D87;
+}
+html.dark .containers__projets__card .card__info__texte-focus {
+  border-color: #104D87;
+}
+html.dark .containers__projets__card .card__info__texte a:hover {
+  background-color: #0588F0;
+}
+html.dark .containers__projets__card span {
+  position: absolute;
+  top: 5px;
+  right: 15px;
+  background-color: #30A46C;
+  color: #0D1520;
+  padding: 3px;
+  border-radius: 5px;
+  font-size: 0.9em;
+}
+
 .containers__projets {
   width: 100%;
   background-color: #F4FAFF;
   border-top: 2px #ACD8FC solid;
   padding-bottom: 150px;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .containers__projets h2 {
   text-align: center;
-  margin-top: 75px;
   padding-bottom: 40px;
 }
 .containers__projets__card {

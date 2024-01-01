@@ -1,9 +1,64 @@
 @import "../variableMixin/variableMixin.scss";
+html.dark {
+	.navBar {
+		background-color: $mainBackgroundDark;
+		border-bottom-color: $borderColorDark;
+		box-shadow: none;
+		&__header img {
+			background-color: white;
+			padding: 5px 10px;
+			border-radius: 5px;
+		}
+		&__CV {
+			background-color: white;
+			padding: 2px;
+			border-radius: 5px;
+		}
+		.bouton__Hamburger {
+			color: $primaryFontLinkDark;
+		}
+		.hamburgerMenu {
+			background-color: $interactiveBackgroundDark;
+			li {
+				border-bottom-color: $borderColorDark;
+				a {
+					p {
+						color: $primaryFontDark;
+					}
+				}
+				&:hover {
+					background-color: $interactiveBackgroundHoverDark;
+					p {
+						color: $primaryFontLinkDark;
+					}
+				}
+			}
+		}
+		&__navLien {
+			li {
+				&:hover {
+					p {
+						color: $primaryFontLinkDark;
+					}
+				}
+	
+				&:not(:last-child)::after {
+					background-color: $borderColorDark;
+				}
+				p {
+					color: $primaryFontDark;
+				}
+			}
+		}
+	}
+
+	
+}
 
 .navBar {
 	position: fixed;
 	background-color: $mainBackground;
-	top:0;
+	top: 0;
 	width: 100%;
 	max-width: 1920px;
 	display: flex;
@@ -20,6 +75,7 @@
 	@include mobile {
 		height: 70px;
 	}
+	
 	&__CV {
 		-webkit-animation: pulsation 1.5s ease-in-out 10s infinite both;
 		animation: pulsation 1.5s ease-in-out 10s infinite both;
@@ -69,10 +125,10 @@
 			max-height: 0;
 			transition: max-height 300ms ease-in-out;
 			&.open {
-				max-height:300px;
-				}
+				max-height: 300px;
+			}
 		}
-	
+
 		ul,
 		li,
 		p {
@@ -82,11 +138,14 @@
 
 		ul {
 			width: 100%;
+			
 			li {
 				text-align: center;
 				border-bottom: $borderColor 1px solid;
 				width: 100%;
 				padding: 10px 0;
+				cursor: pointer;
+				
 
 				a {
 					text-decoration: none;
@@ -124,6 +183,7 @@
 	&__navLien {
 		margin-right: 50px;
 		display: flex;
+		align-items: center;
 		gap: 45px;
 		@include tablet {
 			display: none;
@@ -139,6 +199,10 @@
 			padding: 5px 15px;
 			transition: all 0.2s ease;
 			transition: box-shadow 0.3s ease, transform 0.3s ease;
+			svg {
+				height: 25px;
+				width: auto;
+			}
 
 			&:hover {
 				transform: translateY(2px);
@@ -154,7 +218,7 @@
 				top: 0;
 				left: 100%;
 				height: 100%;
-				width: 2px; 
+				width: 2px;
 				background-color: #ccc;
 				margin-left: 25px;
 			}
@@ -167,13 +231,14 @@
 				gap: 10px;
 			}
 			p {
+				display: flex;
 				color: $primaryFont;
 				font-size: 1.1em;
+				margin: 0;
 				&.active {
 					text-decoration: underline 4px;
 				}
 			}
-			
 		}
 	}
 }

@@ -7,7 +7,9 @@ html {
     scroll-behavior: smooth;
     max-width: 1920px;
     border: $borderColor 1px solid;
-    
+    section {
+      min-height: 1000px;
+    }
     body {
       
         width: 100%;
@@ -54,3 +56,23 @@ html {
     }
 }
 
+html.dark {
+   background-color: $mainBackgroundDark;
+   border-color: $borderColorDark;
+   
+   body {
+       p, a, li, span, label {
+           color: $primaryFontLinkDark;
+       }
+       label {
+        font-size: 0.9em;
+       }
+       strong {
+        font-size: 1.1em;
+        color: $secondaryFontDark;
+       }
+        h1,h2,h3 {
+           color : $primaryFontDark;
+        }
+   }
+}
