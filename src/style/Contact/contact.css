@@ -140,7 +140,7 @@ html.dark .modal__formulaire__content p {
   width: 20%;
   border: none;
   border-radius: 4px;
-  cursor: pointer;
+  cursor: not-allowed;
   font-size: 16px;
 }
 @media screen and (max-width: 768px) {
@@ -150,6 +150,7 @@ html.dark .modal__formulaire__content p {
 }
 .formulaire__contact form .button-active {
   background-color: #0090FF;
+  cursor: pointer;
 }
 .formulaire__contact form .button-active:hover {
   background-color: #0588F0;
