@@ -27,7 +27,7 @@ const Work: React.FC<SliderProps> = ({
 			))}
 			<div className="main__information__liste">
 				<ul>
-					<h2 className={bangla.className}>Le stack utilisé :</h2>
+					<h2 className={bangla.className}>Stack utilisé :</h2>
 					{stackTechnique.map((stack, index) => (
 						<li key={index}>{stack}</li>
 					))}
