@@ -70,8 +70,8 @@ html.dark .banniere__conteneur__lien a:hover {
   border-radius: 100%;
   border: #ACD8FC 2px solid;
   box-shadow: 1px 10px 11px -7px rgba(0, 0, 0, 0.64);
-  height: 400px;
-  width: 400px;
+  height: 40%;
+  width: 21.5%;
 }
 @media screen and (min-width: 769px) and (max-width: 1250px) {
   .banniere__conteneur__image {
